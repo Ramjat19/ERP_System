@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Itim", cursive;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3B82F6;
+}
+
+/* Old Register Theme Styles */
+.bg-sepia {
+  background-color: #f5f5dc; /* Sepia tone */
+}
+
+.bg-paper-texture {
+  background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTA1NzQwNC1pbWFnZS1qb2I2MzAtYV8xLmpwZw.jpg'); /* Add a paper texture image */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.font-serif {
+  font-family: "Itim", cursive; /* A serif font resembling old-style text */
+}
+
+/* Custom colors */
+.bg-brown-200 {
+  background-color: #e0c097; /* Muted brown */
+}
+
+.bg-brown-300 {
+  background-color: #d1b092; /* Slightly darker muted brown */
+}
+
+/* Sepia Shades for Header and Background */
+.bg-sepia-darker {
+  background-color: #e0cfa9; /* Darker sepia tone for the header */
+}
+
+.bg-sepia-lighter {
+  background-color: #f5f5dc; /* Lighter sepia tone for the rest of the page */
+}
+
+.bg-parchment {
+  background-size: cover;
+  background-position: center;
+}
+
+.text-brown-900 {
+  color: #5d4037; /* Dark brown text for day mode */
+}
+
+.border-brown-600 {
+  border-color: #7d5547; /* Slightly darker brown for the header border */
+}
+
+img {
+  filter: sepia(30%);
+  opacity: 0.9;
+}

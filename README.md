@@ -51,11 +51,4 @@ The frontend is developed using **Next.js**, providing a modern, responsive, and
 
 ---
 
-## How to Access
-You can visit the live portal by clicking the link below:
-
-**[Access the ERP Portal]()**
-
----
-
 This ERP system provides a scalable, efficient solution to manage essential academic workflows, improving the interaction between students, faculty, and administration.
